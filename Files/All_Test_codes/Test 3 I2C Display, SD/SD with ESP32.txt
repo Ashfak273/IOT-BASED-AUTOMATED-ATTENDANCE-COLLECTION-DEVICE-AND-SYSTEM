@@ -1,0 +1,24 @@
+================================
+Configurig SD card
+================================
+You Tube - https://www.youtube.com/watch?v=9cLhrjc6pZY
+--------------------------------
+esp32            sd card module
+Vin               VCC
+GND              GND
+D5                  CS
+D18               SCK
+D19               MISO
+D23              MOSI
+
+https://github.com/espressif/arduino-esp32
+
+Download the zip file
+open IDE
+Sketch-> include library -> Add zip and select zip file 
+reopen IDE
+then go to example for ESP 32 Dev kit & click SD(esp32)
+then upload the code while press boot button for 3 sec 
+Press Reset button if failed in  see in serial monitor (make sure no loose connection )
+
+now modify the code for our purpose by U tube vdo

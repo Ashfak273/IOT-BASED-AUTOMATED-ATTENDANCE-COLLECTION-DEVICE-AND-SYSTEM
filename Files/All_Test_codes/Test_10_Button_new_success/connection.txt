@@ -1,0 +1,38 @@
+Finger print
+---------------------
+5V to 3.3V
+GND to GND
+TX to RX2
+RX to TX2
+
+
+display
+--------------
+
+OLED SDA pin to ESP32 Pin D21
+OLED SCL pin to ESP32 Pin D22
+OLED VCC pin to ESP32 3.3V
+OLED GND pin to ESP32 GND
+
+Address 0x3C
+
+
+button 
+---------------
+ button1Pin = 32; // GPIO pin for Button 1 for Enroll & 3.3V
+ button2Pin = 35; // GPIO pin for Button 2 for verify & 3.3V
+
+Reset button En,Gnd
+
+
+keypad
+--------------------
+char hexaKeys[ROWS][COLS] = {
+  {'1','2','3','A'},
+  {'4','5','6','B'},
+  {'7','8','9','C'},
+  {'*','0','#','D'}
+};
+R1,R2,R3,R4,C1,C2,C3,C4s
+byte rowPins[ROWS] = {13, 12, 14, 27}; //connect to the row pinouts of the keypad
+byte colPins[COLS] = {26, 25, 33, 32}; //connect to the column pinouts of the keypad

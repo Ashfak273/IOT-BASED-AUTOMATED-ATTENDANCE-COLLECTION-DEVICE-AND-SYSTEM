@@ -1,0 +1,29 @@
+Blinking test tested 
+
+LED_BUILTIN  wont work in esp32
+
+
+
+int LED_BUILTIN = 2;
+
+void setup() {
+
+pinMode (LED_BUILTIN, OUTPUT);
+ Serial.begin(115200);
+ Serial.println("Hello from setup");
+}
+
+void loop() {
+ delay(1000);
+ digitalWrite(LED_BUILTIN, HIGH);
+ Serial.println("Hello from loop");
+ delay(1000);
+ digitalWrite(LED_BUILTIN, LOW);
+
+}
+
+
+
+==============
+test done
+=============
