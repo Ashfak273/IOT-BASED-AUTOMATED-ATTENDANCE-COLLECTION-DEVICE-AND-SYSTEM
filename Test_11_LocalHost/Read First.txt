@@ -1,0 +1,22 @@
+1. install all library ESP32-    https://dl.espressif.com/dl/package_esp32_index.json
+		       ESP32 board library -espress
+		       Fingerprint-by Adafruite
+		       SimpleTimer-by Natan
+		       Display - I2c by adafruit,GFX "Adafruit GFX Lib" by adafruite,SSD1306 "Adafruit ssd1306" by adafruite, "Adafruit BusIO" by adafruit
+		       SD-by arduino
+
+2.Install Xammp & paste bmetricattendancev2 folder to hdhocks folder then open connectdb in text and change local host name and password as your name and password
+3.off firewall
+4. in arduino code put wifi password & name ,yourWebsiteIP - find in commond prompt " ipconfig "( IPv4 Address. . . . . . . . . . . : 192.168.8.101)
+5.for device token goto xampp and start apache & mysql 
+6.go to -   http://localhost/biometricattendancev2/login.php
+7.open xampp click mysql admin
+8.new->name "biometricattendance" (if you change this name then change also in connectdb.php)
+8.then import biometricattendance.sql file
+9.now ok 
+10.then log in by (admin@gmail.com,123) (if you want u can add more mails in admin in database)
+11.click devices and new devices the copy the DE.UID number to device token (u an connect multiple devices by multi token)
+12.in device u can select a device to whether enroll or attendance mode 
+13.in user u can save a user in every device or every department 
+
+
